@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <%- include("common/header"); %>
+    <h1>hello <%= user.name %></h1>
+    <h1>my mail is <%= user.email %></h1>
+    <% user.skill.forEach((item)=>{%>
+        <li><%= item%></li>
+        <%}) %>
+</body>
+</html>
